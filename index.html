@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Market Learning Circle | Stock Market Education</title>
+<meta name="description" content="Free Telegram community for stock market education: charts, risk management and trading discipline. Seekhiye samajhdari se.">
+<meta name="theme-color" content="#2b1b5e">
+
+<!-- ============================================================
+     EDIT THESE SETTINGS (website owner only)
+     ============================================================ -->
+<script>
+const CONFIG = {
+  BRAND_NAME: "Market Learning Circle",             // <-- REPLACE with your name / brand
+  LOGO_IMAGE: "zth.jpg",                            // <-- REPLACE LOGO: keep your photo named zth.jpg in the same folder as this file
+  TELEGRAM_URL: "https://t.me/+AQb0-84cClJmZTdl",   // <-- TELEGRAM LINK
+  META_PIXEL_ID: "2974066309599348"                 // <-- META PIXEL ID
+};
+</script>
+
+<!-- ============ META PIXEL BASE CODE (PageView only) ============ -->
+<script>
+if (CONFIG.META_PIXEL_ID && CONFIG.META_PIXEL_ID !== "YOUR_META_PIXEL_ID") {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.META_PIXEL_ID);
+  fbq('track', 'PageView');
+}
+</script>
+
+<style>
+:root{
+  --ink:#fff; --soft:rgba(255,255,255,.78); --glass:rgba(255,255,255,.10); --glass-b:rgba(255,255,255,.22);
+  --grad:linear-gradient(160deg,#2b1b5e 0%,#5b2a86 45%,#c2466f 85%,#f08a5d 120%);
+  --cta1:#ffd166; --cta2:#ff9f45;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:"Noto Sans Devanagari","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);line-height:1.6;
+  background:var(--grad) fixed;min-height:100vh;overflow-x:hidden;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+/* floating blurred orbs */
+.orb{position:fixed;border-radius:50%;filter:blur(60px);opacity:.45;z-index:-1;pointer-events:none}
+.o1{width:280px;height:280px;background:#7c5cff;top:-80px;left:-90px}
+.o2{width:300px;height:300px;background:#ff7a59;bottom:-100px;right:-110px}
+main{max-width:600px;margin:0 auto;padding:30px 18px 36px}
+.glass{background:var(--glass);border:1px solid var(--glass-b);border-radius:26px;
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);box-shadow:0 18px 50px rgba(20,8,50,.35)}
+
+/* ---------- Hero card ---------- */
+.hero{padding:34px 22px 26px;text-align:center;position:relative;margin-top:62px}
+.logo{position:absolute;left:50%;top:0;transform:translate(-50%,-50%);width:124px;height:124px;border-radius:50%;padding:4px;
+  background:conic-gradient(from 0deg,#ffd166,#ff7a59,#a78bfa,#ffd166);box-shadow:0 10px 36px rgba(255,160,90,.45)}
+.logo-inner{position:relative;width:100%;height:100%;border-radius:50%;overflow:hidden;background:#3a2278;display:flex;align-items:center;justify-content:center}
+/* REPLACE LOGO IMAGE HERE: just keep your picture saved as zth.jpg */
+.logo-inner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+.logo-fallback{font-weight:800;font-size:38px;color:#ffd166}
+.brand{margin-top:70px;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:#ffd9a8;font-weight:700}
+h1{font-size:clamp(28px,8vw,40px);line-height:1.2;margin:10px 0 10px;font-weight:800}
+h1 mark{background:none;color:#ffd166}
+.hi{font-size:clamp(16px,4.4vw,19px);color:#ffe3c2;font-weight:600}
+.lead{margin:14px auto 0;max-width:470px;color:var(--soft);font-size:16px}
+
+/* ---------- CTA ---------- */
+.cta{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:420px;min-height:62px;margin:26px auto 0;padding:14px 20px;
+  border-radius:20px;background:linear-gradient(135deg,var(--cta1),var(--cta2));color:#2a1250;text-decoration:none;
+  font:800 16.5px/1.2 system-ui,Arial,sans-serif;letter-spacing:.6px;box-shadow:0 12px 30px rgba(255,159,69,.45),inset 0 1px 0 rgba(255,255,255,.6);
+  transition:transform .2s,box-shadow .2s;-webkit-tap-highlight-color:transparent;animation:breathe 3.2s ease-in-out infinite}
+.cta svg{width:28px;height:28px;flex:none}
+.cta:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(255,159,69,.55),inset 0 1px 0 rgba(255,255,255,.6)}
+.cta:active{transform:scale(.985)}
+.cta:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@keyframes breathe{0%,100%{box-shadow:0 12px 30px rgba(255,159,69,.40),inset 0 1px 0 rgba(255,255,255,.6)}50%{box-shadow:0 12px 42px rgba(255,159,69,.70),inset 0 1px 0 rgba(255,255,255,.6)}}
+.free{font-size:13px;color:var(--soft);margin-top:12px}
+
+/* ---------- Sections ---------- */
+section{margin-top:30px}
+.title{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#ffd9a8;font-weight:800;margin:0 4px 12px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{padding:18px 16px;border-radius:22px}
+.card .ico{width:42px;height:42px;border-radius:14px;background:rgba(255,255,255,.16);display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:10px}
+.card h3{font-size:16px;line-height:1.3}
+.card .hi{font-size:13px;display:block;margin:2px 0 6px}
+.card p{font-size:13.5px;color:var(--soft);line-height:1.5}
+.talk{padding:20px;border-radius:22px;font-size:15.5px;color:var(--soft)}
+.talk b{color:#fff}
+.note{margin-top:30px;padding:16px 18px;border-radius:18px;background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.14);font-size:13px;color:var(--soft)}
+.note strong{color:#ffd166}
+.note p+p{margin-top:8px}
+footer{text-align:center;font-size:12.5px;color:var(--soft);margin-top:22px}
+
+@media (max-width:360px){ .cards{grid-template-columns:1fr} }
+@media (min-width:640px){ main{padding-top:48px} }
+@media (prefers-reduced-motion:reduce){ .cta{animation:none} *{transition:none!important;scroll-behavior:auto!important} }
+</style>
+</head>
+<body>
+<div class="orb o1" aria-hidden="true"></div><div class="orb o2" aria-hidden="true"></div>
+
+<main>
+  <header class="hero glass">
+    <!-- REPLACE LOGO IMAGE HERE (file: zth.jpg, set in CONFIG above) -->
+    <div class="logo"><div class="logo-inner">
+      <span class="logo-fallback" aria-hidden="true">M</span>
+      <img id="logoImg" alt="Logo" width="116" height="116">
+    </div></div>
+
+    <p class="brand" data-brand>Market Learning Circle</p>
+    <h1>Understand the market <mark>before</mark> you act on it.</h1>
+    <p class="hi">बाज़ार को समझिए, फिर फ़ैसला लीजिए।</p>
+    <p class="lead">A free Telegram community for stock market education: charts, risk and trading habits, explained in simple English with a little Hindi.</p>
+
+    <!-- ============ TELEGRAM CTA: fires Meta Pixel "Subscribe" on click only ============ -->
+    <a id="tgBtn" class="cta" href="https://t.me/+AQb0-84cClJmZTdl" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#2a1250"/><path fill="#ffd166" d="M17.6 7.3 5.9 11.8c-.8.3-.8.8-.1 1l3 .9 1.1 3.4c.1.4.3.5.6.5s.4-.1.6-.3l1.5-1.4 3 2.2c.5.3 1 .1 1.1-.5l2-9.3c.2-.8-.3-1.2-1.1-.9zm-1.4 2-5.6 5-.2 2.3-.9-2.9 6.2-4.1c.3-.2.5-.1.5.1z"/></svg>
+      <span>JOIN FREE TELGRAM CHANNEL</span>
+    </a>
+    <p class="free">Free to join · मुफ़्त · Opens Telegram directly</p>
+  </header>
+
+  <section aria-labelledby="learn">
+    <p class="title" id="learn">What you will learn · क्या सीखेंगे</p>
+    <div class="cards">
+      <article class="card glass"><div class="ico" aria-hidden="true">📊</div><h3>Chart Basics</h3><span class="hi">चार्ट की समझ</span><p>Candles, trends, support and resistance as learning topics.</p></article>
+      <article class="card glass"><div class="ico" aria-hidden="true">🛡️</div><h3>Risk First</h3><span class="hi">पहले जोखिम</span><p>Position sizing and stop-loss ideas to protect your capital.</p></article>
+      <article class="card glass"><div class="ico" aria-hidden="true">🧠</div><h3>Trading Mindset</h3><span class="hi">सही सोच</span><p>Patience, discipline and keeping emotions out of decisions.</p></article>
+      <article class="card glass"><div class="ico" aria-hidden="true">📰</div><h3>Market Literacy</h3><span class="hi">मार्केट की जानकारी</span><p>How to read market news and basic terms without confusion.</p></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="who">
+    <p class="title" id="who">Who it is for · किसके लिए</p>
+    <div class="talk glass">
+      <b>Beginners</b> who want a clear start, and <b>experienced traders</b> who want to sharpen risk control and discipline. सीखने की चाह हो, बस इतना काफ़ी है।
+    </div>
+  </section>
+
+  <!-- ============ FINANCIAL DISCLAIMER (edit text if needed) ============ -->
+  <aside class="note" aria-label="Disclaimer">
+    <p><strong>Disclaimer:</strong> Everything on this page and in the Telegram channel is for educational and informational purposes only and is not personalized financial or investment advice. Investing and trading involve risk, and you may lose money. No profits or results are guaranteed. Do your own research or consult a qualified financial advisor before making decisions.</p>
+    <p><strong>सूचना:</strong> यह जानकारी केवल शैक्षणिक उद्देश्य के लिए है, निवेश सलाह नहीं। शेयर बाज़ार में निवेश और ट्रेडिंग में जोखिम होता है, नुकसान हो सकता है। किसी लाभ की गारंटी नहीं है।</p>
+  </aside>
+
+  <footer>© <span id="yr"></span> <span data-brand>Market Learning Circle</span></footer>
+</main>
+
+<script>
+(function(){
+  var btn = document.getElementById('tgBtn');
+  btn.href = CONFIG.TELEGRAM_URL;
+  document.querySelectorAll('[data-brand]').forEach(function(el){ el.textContent = CONFIG.BRAND_NAME; });
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Logo with graceful fallback (shows first letter if image is missing)
+  var img = document.getElementById('logoImg');
+  document.querySelector('.logo-fallback').textContent = (CONFIG.BRAND_NAME || 'M').charAt(0).toUpperCase();
+  img.onerror = function(){ img.style.display = 'none'; };
+  img.src = CONFIG.LOGO_IMAGE;
+
+  // ===== META PIXEL "Subscribe" EVENT: fires only on a real click of the Telegram button =====
+  btn.addEventListener('click', function(){
+    try {
+      if (typeof window.fbq === 'function') { fbq('track', 'Subscribe'); }
+    } catch (e) { /* never block Telegram navigation */ }
+    // No preventDefault: the link opens Telegram directly.
+  });
+})();
+</script>
+</body>
+</html>
